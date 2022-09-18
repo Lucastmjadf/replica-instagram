@@ -33,6 +33,12 @@ body {
     top: 26px;
     transition: opacity 2s ease-in-out;
 }
+.replica{
+    left:25px;
+    width: 215px;
+    height: auto;
+    transition: none;
+}
 
 .container-itens {
     width: 350px;
@@ -120,7 +126,12 @@ button {
     margin-bottom: 20px;
     text-align: center;
 }
-
+.conecte-se{
+    margin-bottom: 0;
+    margin-top: 5px;
+    color:#0095f6 ;
+    text-decoration: underline;
+}
 .container-app {
     display: flex;
     justify-content: center;
@@ -128,5 +139,25 @@ button {
 }
 
 .logo-app {
+    
     width: 150px;
+    align-items: center;
+
+}
+.redes-sociais{
+    display: flex;
+    padding: 5px 0 5px 37px;
+    border: 5px solid #dbdbdb;
+    position: relative;
+    top: 15px;
+   align-items: center;
+}
+.liknkedin{
+    width: 100px;
+}
+.whatzapp{
+    width: 65px;
+}
+.github{
+width: 114px;
 }

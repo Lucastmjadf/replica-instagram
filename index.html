@@ -7,7 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style.css">
-    <title>Instagram</title>
+    <script src="../script.js">
+
+    </script>
+    <title>Replica-Instagram</title>
 </head>
 
 <body>
@@ -16,6 +19,7 @@
         <img src="./assets/celular.png" class="img-celular">
         <img src="./assets/insta1.png" class="imagem-celular">
         <img src="./assets/insta2.png" class="imagem-celular" id="troca-imagem">
+        <img src="./assets/replica.png"  class="imagem-celular replica" id="replica">
     </div>
 
     <div class="container-itens">
@@ -36,31 +40,46 @@
         </div>
 
         <p class="paragrafo-app">Obtenha o aplicativo</p>
+        
 
         <div class="container-app">
             <a href="https://apps.apple.com/br/app/instagram/id389801252"><img src="./assets/ios.png" alt="logo do ios"   class="logo-app"></a>    
-            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"><img src="./assets/google.png" alt="logo do google" class="logo-app"> </a>
+            <a href="https://play.google.com/store/apps/details?id=com.instagram.android&hl=pt_BR&gl=US"><img src="./assets/google.png" alt="logo do google" class="logo-app"> </a>           
+        </div>
+        <p class="paragrafo-app conecte-se">CONECTE-SE COMIGO</p>
+        <div class="redes-sociais">
+          <img src="./assets/linkedin.png " class="liknkedin">
+          <a href="https://api.whatsapp.com/send?phone=5565999787128&text=Ol%C3%A1%20Lucas!%20"> <img src="./assets/whatzapp.png" class=" whatzapp"></a>
+          <a href="https://github.com/Lucastmjadf"><img src="./assets/github.png" class=" github"></a>
         </div>
     </div>
-</body>
-
+</body>  
 <script>
     let imagem = document.getElementById("troca-imagem")
 
-    function trocaImagem() {
+function trocaImagem() {
 
-        if (imagem.style.opacity == 0) {
-            imagem.style.opacity = 1
-        }
-        else {
-            imagem.style.opacity = 0
-        }
+    if (imagem.style.opacity == 0) {
+        imagem.style.opacity = 1
     }
+    else {
+        imagem.style.opacity = 0
+    }
+}
 
-    setInterval(function () {
-        trocaImagem()
-    }, 4000);
+setInterval(function () {
+    trocaImagem()
+}, 4000);
+let imgReplica = document.getElementById("replica")
 
+function apareceReplica () {
+     if (imgReplica.style.opacity == 1){
+     imgReplica.style.opacity = 0 
+    }
+     else ( imgReplica.style.opacity = 1)
+}
+setInterval(function() {
+    apareceReplica()
+},500);
 </script>
-
 </html>
